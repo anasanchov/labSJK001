@@ -18,8 +18,22 @@ dist_y = coords_utm_victim[1] - coords_utm_boat[1]
 height = 3
 HAL.takeoff(height)
 
-while True:
-    #act_position = HAL.get_position() #devuelve array [x,y,z]
+
+#x_pos = HAL.get_position()[0]
+#y_pos = HAL.get_position()[1]
+
+
+    #act_pos = HAL.get_position() # sacar la posición hasta que esté en el rango  dentro de las x
+
+
+
+
+while dist_x !=0 and dist_y != 0:
+    act_position = HAL.get_position() #devuelve array [x,y,z]
+    print(act_position[0])
+    print(act_position[1])
+    HAL.set_cmd_pos(dist_x, dist_y, height, angle)
+    print(HAL.get_position())
 
     #if (act_position[0] < dist_x)
 
