@@ -27,7 +27,7 @@ print("DISTANCIA Y: ",dist_y)
 
     #act_pos = HAL.get_position() # sacar la posición hasta que esté en el rango  dentro de las x
 
-while dist_x != x_pos and dist_y != y_pos: #ajustar valores, no redondeados
+while dist_x != x_pos and dist_y != y_pos: #ajustar valores, no redondeados (poner un rango, pe estar entre dist_y -1 y dist_y +1 o así)
     #x_pos, y_pos = HAL.get_position() #devuelve array [x,y,z]
     #print(HAL.get_position())
     #print(y_pos)
