@@ -54,7 +54,7 @@ def rescure_victims():
 
     move_to_location(dist_x, dist_y, height)
 
-    total_victims = 6
+    total_victims = 5
     rescued_victims = 0
 
     while rescued_victims < total_victims:
@@ -66,7 +66,6 @@ def rescure_victims():
 
         victims = detect_victims(front_image)
 
-        #for(x, y, w, h) in 
         print(victims)
 
         for(x, y, w, h) in victims:
@@ -99,7 +98,7 @@ while True:
 #    - Load * xml              |
 #    - Movemos drone           |       cv2
 #    - Monitorizar imagen      |
-#    - nsq classifier          |
+#    - classifier              |
 
 #    - 5 víctimas --> loop
 
