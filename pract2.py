@@ -54,7 +54,7 @@ def rescure_victims():
 
     move_to_location(dist_x, dist_y, height)
 
-    total_victims = 6
+    total_victims = 5
     rescued_victims = 0
 
     while rescued_victims < total_victims:
